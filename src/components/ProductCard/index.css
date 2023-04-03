@@ -1,0 +1,148 @@
+.productCard {
+    height: 650px;
+    width: 1140px;
+    background-color: black;
+    padding-top: 5px;
+    background-image: url('../../assets/hero.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 5% 95%;
+}
+
+.productCardTitlebar {
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+}
+
+.productCardMainArea {
+    display: grid;
+    grid-template-columns: 94% 6%;
+}
+
+.cardWindowOptions {
+    grid-column: 1;
+    justify-self: left;
+    margin-left: 10px;
+}
+
+.windowOptions {
+    margin: 0px 3px;
+    border: 0.1px solid grey;
+    border-radius: 25px;
+}
+
+.cardWindowOptions:hover>.windowOption1 {
+    fill: orange;
+    border: none;
+}
+
+.cardWindowOptions:hover>.windowOption2 {
+    fill: yellow;
+    border: none;
+}
+
+.cardWindowOptions:hover>.windowOption3 {
+    fill: green;
+    border: none;
+}
+
+.heroBtns {
+    grid-column: 2;
+    justify-self: center;
+}
+
+.item5 {
+    grid-column: 4;
+    justify-self: end;
+}
+
+.heroBtn {
+    background-color: #202020;
+    background-image: none;
+    border: 0.5px solid #202020;
+    border-radius: 4px;
+    margin: 0px 5px;
+    transition: transform .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.heroBtn:hover {
+    transform: scale(1.2);
+}
+
+.heroBtn:hover svg {
+    fill: #FFF;
+    stroke: #FFF;
+}
+
+.heroBtn svg {
+    transition: opacity .2s linear;
+}
+
+.heroBtn svg {
+    fill: #878786;
+    stroke: #878786;
+}
+
+.heroBtn:hover svg {
+    opacity: 1;
+}
+
+.mainAnimation {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: inline-grid;
+    grid-template-rows: 10%;
+}
+
+.mainAnimationContentGrid {
+    display: inline-grid;
+    grid-row: 2;
+    grid-template-columns: 7% 47% 46%;
+}
+
+.mainAnimationText {
+    grid-column: 2;
+}
+
+.mainAnimationImageCarousel {
+    grid-column: 3;
+}
+
+.sideScreenImages {
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.heroScreenImages {
+    height: 35px;
+    width: 55px;
+}
+
+.heroScreenBtn {
+    height: 35px;
+    width: 55px;
+    background-color: #1d1d1d;
+    background-image: url('../../assets/hero-plus.png');
+    background-size: cover;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #1d1d1d;
+    border-radius: 5px;
+
+}
+
+.heroScreenBtn:hover {
+    transform: scale(1.1);
+}
+
+.heroScreenBtn {
+    transition: transform .4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}

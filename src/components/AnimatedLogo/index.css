@@ -1,0 +1,10 @@
+.homePageLogo {
+    position: fixed;
+    top: 45px;
+    left: 20px;
+}
+
+.homePageLogo svg {
+    height: 22px;
+    fill: #b2b2b1;
+}
