@@ -3,10 +3,6 @@
     text-rendering: optimizeLegibility;
 }
 
-.navLink:hover {
-    color: #fff;
-    text-decoration: underline;
-}
 
 .navLink {
     position: relative;
@@ -15,4 +11,10 @@
     color: #979797;
     font-size: 1rem;
     text-decoration: none;
+}
+
+.navLink:hover,
+.currentLink {
+    color: #fff;
+    text-decoration: underline;
 }

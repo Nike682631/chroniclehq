@@ -11,7 +11,10 @@ export default defineConfig({
     }),
     Unfonts({
       google: {
-        families: ['Inter', 'Crimson Pro', 'Open Sans', 'Material+Icons'],
+        families: [{
+          name: 'Inter',
+          styles: 'ital,wght@0,400,800;',
+        }, 'Crimson Pro', 'Open Sans', 'Material+Icons'],
       },
     }),
     react()

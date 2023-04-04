@@ -8,6 +8,10 @@
     background-repeat: no-repeat;
 }
 
+.productCard:hover {
+    cursor: url('../../assets/you-cursor.png'), auto;
+}
+
 .container {
     height: 100%;
     width: 100%;
@@ -73,6 +77,7 @@
 
 .heroBtn:hover {
     transform: scale(1.2);
+    cursor: url('../../assets/you-cursor.png'), auto;
 }
 
 .heroBtn:hover svg {
@@ -110,6 +115,78 @@
     grid-column: 2;
 }
 
+.mainAnimationTextTitle {
+    font-size: 64px;
+    font-family: 'Inter';
+    color: #FFF;
+    font-weight: bolder;
+}
+
+.mainAnimationTextTitle :nth-child(1),
+.mainAnimationTextTitle :nth-child(2),
+.mainAnimationTextTitle :nth-child(3) {
+    white-space: nowrap;
+    overflow: hidden;
+    visibility: hidden;
+    animation: typing 1.5s steps(35) forwards;
+    border-image-source: url('../../assets/jessica-cursor.png');
+    border-image-width: 24px 65px;
+    border-image-slice: 0 234 0 0;
+    border-image-outset: 0px 80px 0px 0px;
+}
+
+.mainAnimationTextTitle :nth-child(2) {
+    animation: typing 1.5s steps(50) forwards;
+}
+
+.mainAnimationTextTitle :nth-child(3) {
+    animation: typing-cursor-at-end 1.5s steps(56) forwards;
+}
+
+
+.mainAnimationTextTitle :nth-child(2) {
+    white-space: nowrap;
+    overflow: hidden;
+    animation-delay: calc(1.5s * 1);
+}
+
+.mainAnimationTextTitle :nth-child(3) {
+    white-space: nowrap;
+    overflow: hidden;
+    animation-delay: calc(1.5s * 2);
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+        visibility: hidden;
+    }
+
+    70% {
+        width: 99%;
+        visibility: visible;
+    }
+
+    to {
+        width: 100%;
+        visibility: visible;
+        border-image-source: none;
+    }
+
+}
+
+@keyframes typing-cursor-at-end {
+    from {
+        width: 0;
+        visibility: hidden;
+    }
+
+    to {
+        width: 75%;
+        visibility: visible;
+    }
+}
+
 .mainAnimationImageCarousel {
     grid-column: 3;
 }
@@ -136,6 +213,7 @@
     background-position: center;
     border: 1px solid #1d1d1d;
     border-radius: 5px;
+    cursor: url('../../assets/you-cursor.png'), auto;
 
 }
 

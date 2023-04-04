@@ -63,7 +63,15 @@ function ProductCard() {
                 <div className='productCardMainArea'>
                     <div className='mainAnimation'>
                         <div className='mainAnimationContentGrid'>
-                            <div className='mainAnimationText'></div>
+                            <div className='mainAnimationText'>
+                                <div className='mainAnimationTextAnnouncement'></div>
+                                <div className='mainAnimationTextTitle'>
+                                    <div>Impactful</div>
+                                    <div>stories. Made</div>
+                                    <div>effortlessly.</div>
+                                </div>
+                                <div className='mainAnimationTextSubTitle'></div>
+                            </div>
                             <div className='mainAnimationImageCarousel'></div>
                         </div>
                     </div>
