@@ -1,0 +1,61 @@
+.ProductCardSubtitleImage {
+    height: 65px;
+    width: auto;
+}
+
+.DandDcomponent {
+    position: relative;
+    margin-top: 20px;
+    padding: 5px;
+    animation: drag 1.5s ease-in-out;
+    animation-play-state: running;
+    z-index: 2;
+}
+
+@keyframes drag {
+    from {
+        transform: translateX(200px) translateY(200px);
+        border: 1px solid aqua;
+    }
+
+    99% {
+        transform: translateX(1px) translateY(1px);
+        border: 1px solid aqua;
+    }
+
+    to {
+        transform: translateX(0) translateY(0);
+        border: none;
+    }
+}
+
+.DandDcomponent.animate {
+    animation-play-state: delay running;
+}
+
+
+.mattycursor {
+    height: 40px;
+    width: 65px;
+    position: absolute;
+    right: 180px;
+    bottom: -40px;
+    animation: cursorDrag 1s ease-in-out;
+    animation-delay: 1.6s;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes cursorDrag {
+    from {
+        transform: translateX(0) translateY(0);
+    }
+
+    to {
+        transform: translateX(40px) translateY(-20px);
+    }
+}
+
+.mattycursor.NowAnimate {
+    animation-play-state: running;
+}

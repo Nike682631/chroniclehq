@@ -1,0 +1,76 @@
+.imageCarouselarea {
+    position: relative;
+}
+
+.searchbar {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.forwardSlash {
+    position: absolute;
+    color: #ffffff;
+    left: 24px;
+    font-size: 25px;
+}
+
+.searchbarMessage {
+    position: absolute;
+    color: #666464;
+    width: 300px;
+    left: 30px;
+    font-size: 12px;
+}
+
+.searchbarImage {
+    height: 45px;
+    width: auto;
+    margin-top: 8px;
+}
+
+.saracursor {
+    position: absolute;
+    height: 40px;
+    width: 65px;
+    top: 25px;
+    left: 30px;
+}
+
+.imageCarousel {
+    height: auto;
+    width: auto;
+    max-width: 450px;
+    min-height: 400px;
+    margin-left: 5px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    border: 0.1px solid rgba(76, 71, 71, 0.2);
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.imageCarouselListParent {
+    background-color: black;
+    border-radius: 20px;
+    background-image: radial-gradient(ellipse at top left, rgba(255, 255, 255, 0.1) 1%, transparent 40%);
+    background-size: 62% 50%;
+    background-position: -1px -4px;
+    background-repeat: no-repeat;
+
+    /* background: radial-gradient(ellipse at top left, rgba(255, 255, 255, 0.1) 10%, transparent 15%); */
+
+}
+
+.imageCarouselBlocksTitle {
+    height: 20px;
+    width: auto;
+    padding: 20px;
+}
+
+.imageCarouselListItemImage {
+    height: 25px;
+    padding: 5px;
+    width: auto;
+    opacity: 1;
+}

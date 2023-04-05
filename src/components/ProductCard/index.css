@@ -1,3 +1,8 @@
+.productCardParent {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
 .productCard {
     height: 650px;
     width: 1140px;
@@ -6,6 +11,7 @@
     background-image: url('../../assets/hero.png');
     background-size: contain;
     background-repeat: no-repeat;
+    transform-origin: top;
 }
 
 .productCard:hover {
