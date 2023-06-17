@@ -7,8 +7,9 @@
     position: relative;
     margin-top: 20px;
     padding: 5px;
-    animation: drag 1.5s ease-in-out;
-    animation-play-state: running;
+    animation: drag 1.5s ease-in-out forwards;
+    animation-delay: 2s;
+    visibility: hidden;
     z-index: 2;
 }
 
@@ -16,6 +17,7 @@
     from {
         transform: translateX(200px) translateY(200px);
         border: 1px solid aqua;
+        visibility: hidden;
     }
 
     99% {
@@ -25,6 +27,7 @@
 
     to {
         transform: translateX(0) translateY(0);
+        visibility: visible;
         border: none;
     }
 }

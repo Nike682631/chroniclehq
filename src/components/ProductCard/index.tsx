@@ -67,7 +67,9 @@ function ProductCard() {
                         <div className='mainAnimation'>
                             <div className='mainAnimationContentGrid'>
                                 <div className='mainAnimationText'>
-                                    <div className='mainAnimationTextAnnouncement'></div>
+                                    <a href='https://blog.chroniclehq.com/2023/02/14/chronicle-raises-7-5m-seed-round-from-accel-and-square-peg-to-reimagine-presentations/' className='mainAnimationTextAnnouncement'>
+                                        ✨ $7.5M seed raised with Accel & Square Peg
+                                    </a>
                                     <div className='mainAnimationTextTitle'>
                                         <div>Impactful</div>
                                         <div>stories. Made</div>

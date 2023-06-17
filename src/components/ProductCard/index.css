@@ -5,13 +5,25 @@
 
 .productCard {
     height: 650px;
-    width: 1140px;
+    width: 1170px;
     background-color: black;
     padding-top: 5px;
     background-image: url('../../assets/hero.png');
     background-size: contain;
     background-repeat: no-repeat;
     transform-origin: top;
+    animation: rotation 1.5s;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateX(180deg);
+    }
+
+    to {
+        transform: rotateX(0deg);
+    }
+
 }
 
 .productCard:hover {
@@ -114,11 +126,43 @@
 .mainAnimationContentGrid {
     display: inline-grid;
     grid-row: 2;
-    grid-template-columns: 7% 47% 46%;
+    grid-template-columns: 7% 46% 47%;
 }
 
 .mainAnimationText {
     grid-column: 2;
+}
+
+.mainAnimationTextAnnouncement {
+    font-size: 14px;
+    font-family: 'Inter';
+    color: #FFF;
+    border: 1px solid #7053ff;
+    border-radius: 25px;
+    background-color: #7053ff;
+    height: 22px;
+    width: 65%;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 2px 10px 0px;
+    text-decoration-line: none;
+    animation: appear 1.5s ease-out forwards;
+    animation-delay: 1.5s;
+    visibility: hidden;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 .mainAnimationTextTitle {
@@ -135,6 +179,7 @@
     overflow: hidden;
     visibility: hidden;
     animation: typing 1.5s steps(35) forwards;
+    animation-delay: 1.5s;
     border-image-source: url('../../assets/jessica-cursor.png');
     border-image-width: 24px 65px;
     border-image-slice: 0 234 0 0;
@@ -153,13 +198,13 @@
 .mainAnimationTextTitle :nth-child(2) {
     white-space: nowrap;
     overflow: hidden;
-    animation-delay: calc(1.5s * 1);
+    animation-delay: calc(1.5s * 2);
 }
 
 .mainAnimationTextTitle :nth-child(3) {
     white-space: nowrap;
     overflow: hidden;
-    animation-delay: calc(1.5s * 2);
+    animation-delay: calc(1.5s * 3);
 }
 
 @keyframes typing {
